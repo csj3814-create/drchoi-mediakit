@@ -57,7 +57,8 @@ h2 { font-size:clamp(26px,4vw,34px); margin:0 0 8px; text-align:center; font-wei
 .roles li::before { content:"NOW"; position:absolute; left:0; top:9px; font-size:10px; font-weight:800; color:var(--accent); letter-spacing:.06em; }
 @media (max-width:760px){ .about { grid-template-columns:1fr; } .photo { max-width:300px; margin:0 auto; } }
 
-.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; }
+.cards { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+@media (max-width:640px){ .cards { grid-template-columns:1fr; } }
 .card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:22px; }
 .card .ic { font-size:28px; }
 .card .aud { color:var(--accent2); font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-top:10px; }
@@ -67,7 +68,7 @@ h2 { font-size:clamp(26px,4vw,34px); margin:0 0 8px; text-align:center; font-wei
 
 .videos { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
 .vid { background:var(--panel); border:1px solid var(--line); border-radius:14px; overflow:hidden; text-decoration:none; display:block; }
-.vid img { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; }
+.vid img { width:100%; aspect-ratio:4/5; object-fit:cover; display:block; }
 .vid div { padding:12px 14px; font-weight:700; font-size:15px; }
 .vid small { display:block; color:var(--sub); font-weight:500; font-size:12.5px; margin-top:4px; }
 .more { text-align:center; margin-top:18px; }
